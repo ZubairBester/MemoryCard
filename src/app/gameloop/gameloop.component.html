@@ -1,0 +1,110 @@
+
+<div class="button">
+<app-button
+text="New Game"
+(btnClick)="newgame()"
+></app-button>
+
+<app-button
+text="Restart Game"
+(btnClick)="restartgame()"
+></app-button>
+
+<app-button
+text="Toggle Avatars"
+(btnClick)="toggleAvatars()"
+></app-button>
+
+
+</div>
+
+
+
+
+<div class="matchImg" #matchImg>
+    <img src="assets/Match.png" width=30% (click)="hideMatch()" style="cursor: pointer;">
+</div>
+
+<div class="gameOver" #gameOver>
+    <img src="assets/GameOver.png" width=30% (click)="hideGame()" style="cursor: pointer;">
+</div>
+
+<div class="bg-modal" #inputNames>
+	<div class="modal-contents">
+
+		<form action="">
+            Enter Player Names
+			<input type="text" placeholder="Player 1" #player1>
+			<input type="text" placeholder="Player 2" #player2>
+			<a class="button" (click)="restartgame()" style="cursor: pointer;">Submit</a>
+		</form>
+
+	</div>
+</div>
+
+<div class="player1">
+	<img src="assets/astro1.png" #astro1>
+	<app-players #pl></app-players>
+</div>
+
+<div class="player2">
+	<img src="assets/astro2.png" #astro2>
+    <app-players #p2></app-players>
+</div>
+
+<div class="cards" >
+<app-card (cardClick)="cardClick(0)" #c0></app-card> <!--Each card is a component that emits a card click with their card number as an argument-->
+<app-card (cardClick)="cardClick(1)" #c1></app-card> <!--This is not very scalable, but I had trouble finding an alternate soulution-->
+<app-card (cardClick)="cardClick(2)" #c2></app-card>
+<app-card (cardClick)="cardClick(3)" #c3></app-card>
+<app-card (cardClick)="cardClick(4)" #c4></app-card>
+<app-card (cardClick)="cardClick(5)" #c5></app-card>
+<app-card (cardClick)="cardClick(6)" #c6></app-card>
+<app-card (cardClick)="cardClick(7)" #c7></app-card>
+<app-card (cardClick)="cardClick(8)" #c8></app-card>
+<app-card (cardClick)="cardClick(9)" #c9></app-card>
+<app-card (cardClick)="cardClick(10)" #c10></app-card>
+<app-card (cardClick)="cardClick(11)" #c11></app-card>
+<app-card (cardClick)="cardClick(12)" #c12></app-card>
+<app-card (cardClick)="cardClick(13)" #c13></app-card>
+<app-card (cardClick)="cardClick(14)" #c14></app-card>
+<app-card (cardClick)="cardClick(15)" #c15></app-card>
+<app-card (cardClick)="cardClick(16)" #c16></app-card>
+<app-card (cardClick)="cardClick(17)" #c17></app-card>
+<app-card (cardClick)="cardClick(18)" #c18></app-card>
+<app-card (cardClick)="cardClick(19)" #c19></app-card>
+<app-card (cardClick)="cardClick(20)" #c20></app-card>
+<app-card (cardClick)="cardClick(21)" #c21></app-card>
+<app-card (cardClick)="cardClick(22)" #c22></app-card>
+<app-card (cardClick)="cardClick(23)" #c23></app-card>
+<app-card (cardClick)="cardClick(24)" #c24></app-card>
+<app-card (cardClick)="cardClick(25)" #c25></app-card>
+<app-card (cardClick)="cardClick(26)" #c26></app-card>
+<app-card (cardClick)="cardClick(27)" #c27></app-card>
+<app-card (cardClick)="cardClick(28)" #c28></app-card>
+<app-card (cardClick)="cardClick(29)" #c29></app-card>
+<app-card (cardClick)="cardClick(30)" #c30></app-card>
+<app-card (cardClick)="cardClick(31)" #c31></app-card>
+<app-card (cardClick)="cardClick(32)" #c32></app-card>
+<app-card (cardClick)="cardClick(33)" #c33></app-card>
+<app-card (cardClick)="cardClick(34)" #c34></app-card>
+<app-card (cardClick)="cardClick(35)" #c35></app-card>
+<app-card (cardClick)="cardClick(36)" #c36></app-card>
+<app-card (cardClick)="cardClick(37)" #c37></app-card>
+<app-card (cardClick)="cardClick(38)" #c38></app-card>
+<app-card (cardClick)="cardClick(39)" #c39></app-card>
+<app-card (cardClick)="cardClick(40)" #c40></app-card>
+<app-card (cardClick)="cardClick(41)" #c41></app-card>
+<app-card (cardClick)="cardClick(42)" #c42></app-card>
+<app-card (cardClick)="cardClick(43)" #c43></app-card>
+<app-card (cardClick)="cardClick(44)" #c44></app-card>
+<app-card (cardClick)="cardClick(45)" #c45></app-card>
+<app-card (cardClick)="cardClick(46)" #c46></app-card>
+<app-card (cardClick)="cardClick(47)" #c47></app-card>
+<app-card (cardClick)="cardClick(48)" #c48></app-card>
+<app-card (cardClick)="cardClick(49)" #c49></app-card>
+<app-card (cardClick)="cardClick(50)" #c50></app-card>
+<app-card (cardClick)="cardClick(51)" #c51></app-card>
+<app-card (cardClick)="cardClick(52)" #c52></app-card>
+<app-card (cardClick)="cardClick(53)" #c53></app-card>
+</div>
