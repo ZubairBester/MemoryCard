@@ -36,6 +36,13 @@ export class GameloopComponent implements OnInit {
   ngOnInit(): void {
   }  
 
+  handleKeyUp(e: any) {
+
+    if (e.keyCode === 13)
+      this.restartgame();
+
+  }
+  
   toggleAvatars(){ //show and hide astronauts to give more space on smaller screens
     if(this.astro1.nativeElement.style.display == ""){
       this.astro1.nativeElement.style.display = "none"; 
